@@ -1,0 +1,26 @@
+// BIG O Notation
+Remarks:
+    1. Algorithm speed is not measured in seconds, but in number of operations
+    2. The important factor is HOW QUICKLY the RUNTIME INCREASES as the size of the input increases
+    3. Runtime of algorithms is expressed in BIG O Notation
+    4. For reference: O(log n) is faster than O(n), but it gets a lot faster as the list of inputs increases
+
+Typical Big O:
+- O(1)
+    1. One single operation to complete the task
+    2. Independent of the size of the input
+    3. Example - reading an element in an ARRAY or inserting a new element in a LIST
+- O(n)
+    1. Linear increase with the increase of items
+    2. Also known as LINEAR TIME
+    3. Example - SIMPLE SEARCH: the introduction of a new input increases in +1 the number of operations
+- O(log n)
+    1. Logarithmic increase with the increase of items
+    2. Also known as LOG TIME
+    3. Example - BINARY SEARCH: the introduction of a new input increases very little the number of operations
+- O(n * log n)
+    1. Fast sorting algorithm like quicksort
+- O(n^2)
+    1. Slow sorting algorithm like selection sort
+- O(n!)
+    1. A very slow algorithm like the travelling salesperson
