@@ -1,0 +1,8 @@
+THE ELEMENTS OF COMPUTING SYSTEMS I (From NAND to TETRIS I)
+"NAND 2 TETRIS I" is an introductory course that guides students through the process of building a simple computer from basic logic gates.
+The course covers topics such as Boolean algebra, logic gates, and the design of a central processing unit (CPU).
+Students learn to construct a hardware platform and develop a software hierarchy, including an assembler and a virtual machine.
+By the end of the course, students will have a deeper understanding of how computers work from the ground up.
+It's a hands-on, project-based learning experience that bridges hardware and software concepts.
+
+This course corresponds to the first part of the full training - from NAND to Hack Computer (ROM, RAM, CPU and Assembler written in C-Code)
