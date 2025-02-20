@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "playerinput.h": "c",
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "maxofarray.h": "c",
+        "numberplayers.h": "c",
+        "alltocapital.h": "c"
+    }
+}
