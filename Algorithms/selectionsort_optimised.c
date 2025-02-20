@@ -22,9 +22,16 @@ void selectionsort(int size, int array[])
 
 int main(void)
 {
-    int numbers[7] = {3, 1, 5, 2, 55, 43, 100};
+    int numbers[7] = {3, 1, 5, 828, 55, 43, 100};
+    printf("unsorted array: \n");
+    for (int i = 0; i < 7; i++)
+    {
+        printf("%i ", numbers[i]);
+    }
+
     selectionsort(7, numbers); 
     
+    printf("\nsorted array: \n");
     for (int i = 0; i < 7; i++)
     {
         printf("%i ", numbers[i]);
