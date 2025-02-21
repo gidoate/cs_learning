@@ -1,1 +1,2 @@
-This is the repository description
+This repository contains material I am developing while I teach myself computer science.
+Training courses on: computer HW, Algorithms, C-Coding, Data structures.... 
