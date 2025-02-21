@@ -1,2 +1,3 @@
 Repository owner: Germán Idoate
 Type of repository: Private
+Allowed to commit: Germán Idoate
