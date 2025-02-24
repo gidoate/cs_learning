@@ -18,5 +18,7 @@ int main(void)
     printf("Enter the index of Fibonacci's sequence of which you'd like to know the value: ");
     scanf("%i", &n);
     int x = fibonacci(n);
-    printf("The value of Fibonacci's sequence at position %i is number %i", n, x);
+    int y = fibonacci(n+1);
+    printf("The value of Fibonacci's sequence at position %i is number %i\n", n, x);
+    printf("The next value of Fibonacci's sequence is number %i\n", y);
 }
