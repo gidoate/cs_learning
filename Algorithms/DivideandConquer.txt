@@ -1,0 +1,11 @@
+//// Divide and Conquer notes ////
+
+General RECURSIVE technique to resolve problems for which an specific algorithm is not available
+As an example - Quicksort uses the "Divide and Conquer" technique
+
+Tip about working recursively with arrays - the base case is normall an empty array or an array with one element!
+
+
+// Functional programming //
+Functional programming languages like Haskell do not have loops, so need to use recursion.
+It's important to learn recursion to better understand functional programming languages.
