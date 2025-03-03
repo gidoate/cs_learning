@@ -9,3 +9,6 @@ Tip about working recursively with arrays - the base case is normall an empty ar
 // Functional programming //
 Functional programming languages like Haskell do not have loops, so need to use recursion.
 It's important to learn recursion to better understand functional programming languages.
+
+// Inductive proofs //
+Learn about this topic

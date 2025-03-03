@@ -1,0 +1,41 @@
+// Quicksort algorithm //
+
+Quicksort Big O
+Worst Case - O (n^2)
+Average Case (Best Case) - O (n * log n)
+
+Merge sort Big O
+Always - O (n * log n)
+
+Why not always using Merge sort?
+    Quicksort has a smaller constant than merge sort. Constant are normally no relevant, but in certain cases they might be
+    So if they’re both O(n log n) time, quicksort is faster
+    Quicksort is faster in practice because it hits the average case way more often than the worst case
+
+// Quicksort implementation //
+It's based in three functions: quicksort (recursive), partition (arrangement of sub-arrays) and swap (support function)
+1. Quicksort:
+    It's the recursive part of the implementation
+    As arguments, takes the array, the min index (low) and the max index (high)
+    Computes the pivot (calling partition function) and recursively calls quicksort for the left and right sub-arrays
+2. Partition:
+    It's the function that computes the arrangement of the array and returns the index of the pivot
+    As arguments, takes the array, the min index (low) and the max index (high)
+    Set's the pivot to the value of the lowest index of the array
+    Looks for the index of the first value higher than pivot starting from the left (i)
+    Looks for the index of the frist value lower than pivot starting from the right (j)
+    If index from left is lower than index from right, swaps values (does it through addresses, so the swap is effective for all the stack)
+    Finally, swaps the pivot from array[low] the the correct position array[j] to sort out the array and returns j as the pivot position
+3. Swap:
+    Support function to allow to swap values.
+    It uses pointers rather than values, so actual values in the array can be modified for the whole stack, not only in the context of swap
+    Explanation (a bit of C theory):
+        In C, when you pass arguments to a function, they are passed by value by default
+        This means that the function receives a COPY of the arguments, and any CHANGES made to these copies DO NOT AFFECT the original variables
+        To modify the original variables, you need to pass their ADDRESSES (pointers)
+        This way, the function can directly access and modify the original variables
+        When you call the swap function, you need to pass the addresses of the variables you want to swap
+        This is done using the ADDRESS-OF operator (&)
+
+
+
