@@ -1,0 +1,21 @@
+// Reading, Writing, Creating and Closing files //
+
+FILE is a type defined in the standard I/O library (stdio.h) that represents a file stream.
+It is used to handle file operations such as reading, writing, and closing files.
+The FILE type is essentially a structure that contains information about the file, including its current position, error status, and other attributes.
+
+fopen(file, mode) function to open a file and obtain a FILE pointer
+    Here are some common modes you can use with fopen:
+    "r": Open for reading. The file must exist.
+    "w": Open for writing. If the file exists, its contents are truncated. If the file does not exist, it is created.
+    "a": Open for appending. Data is written to the end of the file. If the file does not exist, it is created.
+    "r+": Open for reading and writing. The file must exist.
+    "w+": Open for reading and writing. If the file exists, its contents are truncated. If the file does not exist, it is created.
+    "a+": Open for reading and appending. Data is written to the end of the file. If the file does not exist, it is created.
+
+fgets, fscanf, or fread to read data from the file, they are part of the standard I/O library (stdio.h)
+    The fgets function knows it has reached the end of the file (EOF) when it encounters the end-of-file indicator while reading
+    feof function in C is used to check if the end-of-file (EOF) indicator associated with a file stream is set. 
+
+fprintf, fputs, or fwrite to write data to the file
+fclose function to close the file and release resources
