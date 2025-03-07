@@ -17,5 +17,5 @@ fgets, fscanf, or fread to read data from the file, they are part of the standar
     The fgets function knows it has reached the end of the file (EOF) when it encounters the end-of-file indicator while reading
     feof function in C is used to check if the end-of-file (EOF) indicator associated with a file stream is set. 
 
-fprintf, fputs, or fwrite to write data to the file
+fprintf, fputs (to write a string), fputc (to write a character) or fwrite to write data to the file
 fclose function to close the file and release resources

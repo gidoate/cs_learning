@@ -5,8 +5,8 @@
 
 // Computes R0 = 2 + 3
 
-@2
-D=A
+@2 // Selection of address 2
+D=A // D equals to 2
 @3
 D=D+A
 @0
