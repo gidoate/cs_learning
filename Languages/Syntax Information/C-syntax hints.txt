@@ -1,3 +1,19 @@
+// ------------- Pointers ------------- //
+
+Think of pointers as being a VARIABLE that points to another location in memory
+& -> "Address of" operator: this tells the address of something
+* -> "De-reference" operator: tells you how to get there and "look" what's inside
+	Example:
+	int n = 50;
+	int *p = &n; // The * operator tells you that this is a POINTER to an INTEGER
+		     // In this case, the pointer is "declared" (aka created), so we need to specify the "type" of the pointer
+	printf("%i\n", *p); // This tells the compiler "go to the address of n and print the content"
+			    // In this case, * means "go there" (de-reference) and print out what is there
+			    // When USING the pointer, we do not need to declare the type again, the compiler "remembers" it
+	// So - "p" happens to be a VARIABLE which value is an ADDRESS
+	// And - "n" happens to be a VARIABLE at "p" value address, which value happens to be an INTEGER
+
+
 // Reading, Writing, Creating and Closing files //
 
 FILE is a type defined in the standard I/O library (stdio.h) that represents a file stream.
