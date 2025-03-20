@@ -38,20 +38,14 @@ int main(int argc, char *argv[])
     }
     // Clean file from whitespace and comments
     cleanfile(line, inputFile, cleanFile);
+
     // Close the input file
     fclose(inputFile);
-    // Create the symbol table
-    //symboltable(line, cleanFile, symbolsFile);
-
-
-
-    /* REMOVE the cleanFile
-    if (remove(cleanFileName) == 0) {
-        printf("File deleted successfully.\n");
-    } else {
-        perror("Error deleting file");
-    }
-    */
+    // Create and print the symbol table
+    SymbolTable* st = createSymbolTable();
+    processFile(st, cleanFile);
+    printSymbolTable(st); // Print the contents of the symbol table
+    freeSymbolTable(st);
 
     printf("Assembly process completed sucessfully\n");    
     return 0;
