@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks":
+    [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/hackassembler.c",
+                "${workspaceFolder}/cleanfile.c",
+                "${workspaceFolder}/parser.c",
+                "${workspaceFolder}/symboltable.c",
+                "-o",
+                "${workspaceFolder}/hackassembler.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for debugging"
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-// ------------- Pointers ------------- //
+					// ------------- Pointers ------------- //
 
 Think of pointers as being a VARIABLE that points to another location in memory
 & -> "Address of" operator: this tells the address of something
@@ -13,8 +13,64 @@ Think of pointers as being a VARIABLE that points to another location in memory
 	// So - "p" happens to be a VARIABLE which value is an ADDRESS
 	// And - "n" happens to be a VARIABLE at "p" value address, which value happens to be an INTEGER
 
+	printf("%p\n", n); // This will show the address of n
 
-// Reading, Writing, Creating and Closing files //
+					// ------------- Strings ------------- //
+
+Assume I have saved a string s = "HI!":
+	string s = "HI!"; // Remember: "string" IS NOT a data type in C (is just something from CS50 course)
+	printf("%p\n", s); // This will show the address of the first character of HI! (in this case, H)
+	printf("%p\n", &s[0]); // This will show the address of the character 0 of HI! (in this case, H)
+	printf("%s\n", s); // This will print the full string, going first to the address of the first character, and printing all inside the string until it finds the NUL character
+So, what is "s" really storing? s is storing the address of the first character of HI!
+printf is going to the address stored in "s" and printing every character until it founds the NUL character "\0"
+
+From now on, "string" data type needs to be replaced with "char *" data type, which means that the variable stores an address that is pointing to the firs character of the string
+How to create the "string" datatype:
+	typedef char * string; // Code to tell the compiler I want to use the term "string" rather than "char *"
+
+Pointer arithmetic
+char *s = "HI!";
+printf("%c\n", *s); // This is saying "go to" (*) the first character of "s" (because "s" is a strign (aka char *), which means it is the address of a char) and print what's inside
+printf("%c\n", *(s+1); // This will print the value of the address at s+1
+
+Memory allocation
+If I want to copy a string, I need to allocate some memory where I want to store the string I am copying. 
+For this, MALLOC is used. To use MALLOC we need to #include <stdlib.h>
+	Example
+	char *s = "hi!\n";
+	char *t = malloc(strlen(s)+1); // This provides me the amount of bytes of memory one after the other that are needed to store the information contained in the char * "s"
+	for (int i = 0; n = strlen(s); i <= n;  i++) // Use <= so it copies the NUL character
+	{
+		t[i] = s[i]; // This will copy one by one each of the values of the array that contains the whole string
+	}
+
+When using MALLOC, there must always be an error check, because if the return of malloc is NULL, there hasn't been allocated any memory, so it's better to not modify anything, because we won't know what we are modifying:
+	char *t = malloc(strlen(s) + 1);
+	if (t == NULL)
+	{
+		return 1; // Return an error if no memory is allocated
+	}
+
+When using MALLOC, after using it it's important to return it back
+	free(t)
+IF MALLOC IS CALLED TOO MANY TIMES AND THEN MEMORY IS NOT FREED -----> A HEAP OVERFLOW MIGHT OCCUR
+
+Use from library - strcpy(destination, source); // to copy two strings
+
+			// ------------- Passing variables by reference ------------- //
+Example:
+	void swap(int *a, int *b) // What this is saying is that a (and b) won't be an INT, but the addresses of those INTs
+	{
+		int temp = *a;
+		*a = *b;
+		*b = temp;
+	}
+This would return the actual values of a and b swapped to the main function, because we have changed the VALUES AT the MEMORY ADDRESSES.
+This solves the problem with the context of the functions.
+IF A STACK TOO BIG IS CALLED (i.e. lots of recursion cases) THEN -----> A STACK OVERFLOW MIGHT OCCUR
+
+			// ------------- Reading, Writing, Creating and Closing files ------------- //
 
 FILE is a type defined in the standard I/O library (stdio.h) that represents a file stream.
 It is used to handle file operations such as reading, writing, and closing files.
@@ -35,3 +91,46 @@ fgets, fscanf, or fread to read data from the file, they are part of the standar
 
 fprintf, fputs (to write a string), fputc (to write a character) or fwrite to write data to the file
 fclose function to close the file and release resources
+
+Example 1 (Create a phonebook file):
+	#inlclude <stdio.h>
+	#include <string.h>
+	#include <cs50.h> // this example uses CS50 library
+	
+	int main(void)
+	{
+		FILE *file = fopen("phonebook.csv", "a"); // Creates a pointer named "file" and opens an file called phonebook in append mode
+		if (file == NULL)
+		{
+			return 1;
+		}
+		char *name = get_string("Name: \n");
+		char *number = get_string("Number: \n");
+
+		frpintf(file, "%s, %s\n", name, number);
+
+		fclose(file);		
+	}
+
+Example 2 (Copy files):
+
+	#include <stdio.h>
+	#include <stdint.h>
+	typedef uint8_t BYTE;
+
+	int main (int argc, char *argv[])
+	{
+		FILE *src = fopen(argv[1], "r");
+		FILE *dst = fopen(argv[2], "w");
+
+		BYTE b;
+		while(fread(&b, sizeof(b), 1, src) != 0) // reads the file byte by byte by byte, left to right and up to down	
+		{
+			fwrite(&b, sizeof(b), 1, dst);	
+		}
+		fclose(src);
+		fclose(dst);
+	}
+
+
+
