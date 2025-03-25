@@ -41,10 +41,12 @@ int main(int argc, char *argv[])
 
     // Close the input file
     fclose(inputFile);
-    // Create and print the symbol table
-    SymbolTable* st = createSymbolTable();
+    fclose(cleanFile);
+    
+    //Create and print the symbol table
+    SymbolTable *st = createSymbolTable();
     processFile(st, cleanFile);
-    printSymbolTable(st); // Print the contents of the symbol table
+    //printSymbolTable(st); // Print the contents of the symbol table
     freeSymbolTable(st);
 
     printf("Assembly process completed sucessfully\n");    

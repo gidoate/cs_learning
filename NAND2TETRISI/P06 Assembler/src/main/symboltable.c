@@ -1,8 +1,9 @@
 #include "symboltable.h"
+
 #define BUFFER_SIZE 256
 
 // Function to create and initialize a new symbol table
-SymbolTable* createSymbolTable()
+SymbolTable *createSymbolTable()
 {
     SymbolTable *st = (SymbolTable *)malloc(sizeof(SymbolTable));
     st->size = 0;
@@ -101,22 +102,27 @@ void freeSymbolTable(SymbolTable *st)
 // Function to process the cleaned file and add labels to the symbol table
 void processFile(SymbolTable *st, FILE *file)
 {
-    if (!file) {
+    if (!file)
+    {
         perror("Error opening file");
         exit(EXIT_FAILURE);
     }
-    char line[256];
+    char line[BUFFER_SIZE];
     int address = 0;
+
+    printf("Starting to process the file...\n");
 
     while (fgets(line, BUFFER_SIZE, file))
     {
+        printf("Read line: %s\n", line);
+
         // Remove newline character
-        line[strcspn(line, "\n")] = 0;
+        // line[strcspn(line, "\n")] = 0;
 
         // Check if the line is a label (starts with '(' and ends with ')')
         if (line[0] == '(')
         {
-            printf("we are in processFile2\n");
+            printf("Processing label...\n");
             // Extract the label name
             line[strlen(line) - 1] = 0; // Remove the closing ')'
             addSymbol(st, line + 1, address); // Add the label to the symbol table
@@ -125,7 +131,7 @@ void processFile(SymbolTable *st, FILE *file)
         // Check if the line starts with '@' followed by a letter
         else if (line[0] == '@' && isalpha(line[1]))
         {
-            printf("we are in processFile3\n");
+            printf("Processing symbol...\n");
             // Extract the symbol name
             addSymbol(st, line + 1, address); // Add the symbol to the symbol table
             printf("Added symbol: %s at address %d\n", line + 1, address); // Debugging output
@@ -133,11 +139,11 @@ void processFile(SymbolTable *st, FILE *file)
         }
         else
         {
-            printf("we are in processFile4\n");
+            printf("Processing instruction...\n");
             address++; // Increment the address for each instruction
         }
     }
-    printf("we are in processFile5\n");
+    printf("Finished processing the file.\n");
     fclose(file);
 }
 
