@@ -11,7 +11,9 @@
 #include <ctype.h>
 
 //------------------ Structure declarations ------------------//
-// Structure for the symbols and their address
+/*
+* Structure for the symbols and their address
+*/
 typedef struct {
     char *symbol;
     int address;
