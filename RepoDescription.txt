@@ -1,2 +1,12 @@
 This repository contains material I am developing while I teach myself computer science.
 Training courses on: computer HW, Algorithms, C-Coding, Data structures.... 
+
+Course completion:
+Course 1 - The elements of computing systems I (From Nand 2 Tetris I)
+  Projects:
+      1. Project 1 - Logic gates
+      2. Project 2 - ALU
+      3. Project 3 - Computer memory chips (RAM and ROM)
+      4. Assembly language
+      5. Von-Neuman Architecture implementation
+      6. Assembler 
