@@ -1,0 +1,133 @@
+// ---------- BIG O Notation ---------- //
+Remarks:
+    1. Algorithm speed is not measured in seconds, but in number of operations
+    2. The important factor is HOW QUICKLY the RUNTIME INCREASES as the size of the input increases
+    3. Runtime of algorithms is expressed in BIG O Notation
+    4. For reference: O(log n) is faster than O(n), but it gets a lot faster as the list of inputs increases
+
+Typical Big O:
+- O(1) -
+    1. One single operation to complete the task
+    2. Independent of the size of the input
+    3. Example - reading an element in an ARRAY or inserting a new element in a LIST
+- O(n)
+    1. Linear increase with the increase of items
+    2. Also known as LINEAR TIME
+    3. Example - SIMPLE SEARCH: the introduction of a new input increases in +1 the number of operations
+- O(log n) - binary search
+    1. Logarithmic increase with the increase of items
+    2. Also known as LOG TIME
+    3. Example - BINARY SEARCH: the introduction of a new input increases very little the number of operations
+- O(n * log n) - quicksort
+    1. Fast sorting algorithm like quicksort
+- O(n^2)
+    1. Slow sorting algorithm like selection sort
+- O(n!)
+    1. A very slow algorithm like the travelling salesperson
+
+In terms of BIG O:
+            ARRAYS  | LISTS | HASH TABLE
+Reading     O(1)    | O(n)  | Avg O(1) - Worst O(n)
+Insertion   O(n)    | O(1)  | Avg O(1) - Worst O(n)
+Deletion    O(n)    | O(1)  | Avg O(1) - Worst O(n)
+
+// ---------- Recursion ---------- //
+Learn about TRAIL RECURSION
+
+// ---------- Divide and Conquer ---------- //
+
+General RECURSIVE technique to resolve problems for which an specific algorithm is not available
+As an example - Quicksort uses the "Divide and Conquer" technique
+
+Tip about working recursively with arrays - the base case is normall an empty array or an array with one element!
+
+**  --  Functional programming --  **
+Functional programming languages like Haskell do not have loops, so need to use recursion.
+It's important to learn recursion to better understand functional programming languages.
+
+**  --  Inductive proofs  --  **
+Learn about this topic
+
+// ---------- Array vs Linked Lists ---------- //
+
+Arrays advantage
+    1. It's easy (fast) to access (read/write) any random (at any random index) you're interested at
+    2. Allow RANDOM and SEQUENTIAL access 
+Arrays disadvantage:
+    1. They require the memory space for all of the items
+    2. It's difficult to make them bigger without moving the array to a different memory location (slow operations)
+    3. There might be available memory for all the items, but not cosecutively, what stops you from being able to 
+       store the disadvantage
+    4. Slower to insert or delete one element
+
+Linked list advantage:
+    1. It's easy to include a new element to the list
+    2. Can make full use of the memory, even though there might not be all the address one after the other
+    3. Faster to insert or delete one element
+Linked list disadvantage
+    1. It's difficult (slow) to access any random element of the list, because you'll need to 
+       follow the list through each element until finding the one you're looking for
+    2. Allow only for SEQUENTIAL access
+
+
+
+** -- Combinations of both type of data structures are possible and might be a good solution in certain cases
+where reading and adding data is requied  -- **
+
+// ---------- Quicksort algorithm ---------- //
+Quicksort Big O
+Worst Case - O (n^2)
+Average Case (Best Case) - O (n * log n)
+
+Merge sort Big O
+Always - O (n * log n)
+
+Why not always using Merge sort?
+    Quicksort has a smaller constant than merge sort. Constant are normally no relevant, but in certain cases they might be
+    So if they’re both O(n log n) time, quicksort is faster
+    Quicksort is faster in practice because it hits the average case way more often than the worst case
+
+// Quicksort implementation //
+It's based in three functions: quicksort (recursive), partition (arrangement of sub-arrays) and swap (support function)
+1. Quicksort:
+    It's the recursive part of the implementation
+    As arguments, takes the array, the min index (low) and the max index (high)
+    Computes the pivot (calling partition function) and recursively calls quicksort for the left and right sub-arrays
+2. Partition:
+    It's the function that computes the arrangement of the array and returns the index of the pivot
+    As arguments, takes the array, the min index (low) and the max index (high)
+    Set's the pivot to the value of the lowest index of the array
+    Looks for the index of the first value higher than pivot starting from the left (i)
+    Looks for the index of the frist value lower than pivot starting from the right (j)
+    If index from left is lower than index from right, swaps values (does it through addresses, so the swap is effective for all the stack)
+    Finally, swaps the pivot from array[low] the the correct position array[j] to sort out the array and returns j as the pivot position
+3. Swap:
+    Support function to allow to swap values.
+    It uses pointers rather than values, so actual values in the array can be modified for the whole stack, not only in the context of swap
+    Explanation (a bit of C theory):
+        In C, when you pass arguments to a function, they are passed by value by default
+        This means that the function receives a COPY of the arguments, and any CHANGES made to these copies DO NOT AFFECT the original variables
+        To modify the original variables, you need to pass their ADDRESSES (pointers)
+        This way, the function can directly access and modify the original variables
+        When you call the swap function, you need to pass the addresses of the variables you want to swap
+        This is done using the ADDRESS-OF operator (&)
+
+// ---------- Hash tables ---------- //
+
+This is a quick way to find an item in a list.
+Based on:
+	1. Hash function
+		1.1. Shall be consistent - return always the same output for a given input
+		1.2. Shall map different words to different numbers (avoid collisions)
+	2. Array of data
+Good for:
+	1. Modelling relationships between one thing and another thing
+	2. Filtering out duplicates
+	3. Caching/Memorizing data 
+
+Collision - when two keys are assigned to the same slot in the array
+	To avoid collision, a think that could be done is to assign a liked list to the slot, so in the case several items end up
+	in the same slot, they can be structred in a list.
+	This has an impact on performance, provided that serching in an array is O(1), but in a linked list is O(n), so a good hash
+	function is very important.
+Review Load Factor (shall always be <0.7) and Hash Function creation (SHA Function)
