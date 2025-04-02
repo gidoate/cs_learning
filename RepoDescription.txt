@@ -1,12 +1,27 @@
-This repository contains material I am developing while I teach myself computer science.
+This repository contains material I am developing while I teach myself computer science and embedded systems development.
 Training courses on: computer HW, Algorithms, C-Coding, Data structures.... 
 
 Course completion:
-Course 1 - The elements of computing systems I (From Nand 2 Tetris I)
+
+Course 1 (completed - 100%) - The elements of computing systems I (From Nand 2 Tetris I) - The Hebrew Universtity of Jerusalem
   Projects:
-      1. Project 1 - Logic gates
-      2. Project 2 - ALU
-      3. Project 3 - Computer memory chips (RAM and ROM)
-      4. Assembly language
-      5. Von-Neuman Architecture implementation
-      6. Assembler 
+      1. Project 1 - Building Logic gates 
+      2. Project 2 - Building ALU 
+      3. Project 3 - Builiding Computer memory chips (RAM and ROM)
+      4. Project 4 - Hack Computer assembly language (2x instruction assembly language)
+      5. Project 5 - Implementing the Von-Neuman Architecture
+      6. Project 6 - Building the assembler (hand-written version and coding version)
+
+Course 2 (ongoing - 50%) - CS50x 2025 - Harvard University
+  Main topics:
+      1. Programming basics (C, Python, SQL) - hello world!, arrays, debugging, recursion, structures, pointers, file I/O 
+      2. Computing science foundamentals - machine language, assembly language, memory hierarchy (heap, stack, buffer overflow...)
+      3. Algorithms - Big O notation, linear search, binary search, sorting algorithms
+      ...
+
+Course 3 (ongoing - 40%) - Algorithms and Data structures - based on book "Grokking Algorithms" (Aditya Y. Bhargava)
+  Main topics:
+      0. Programming fundamentals: recursion
+      1. Algorithms: Big O notiation, Linear search, Binary search, Selection sort, Quick sort
+      2. Data structures: Arrays, Linked lists, Hash tables
+      ...
