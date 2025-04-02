@@ -1,4 +1,4 @@
-					// ------------- Pointers ------------- //
+// ------------- Pointers ------------- //
 
 Think of pointers as being a VARIABLE that points to another location in memory
 & -> "Address of" operator: this tells the address of something
@@ -15,7 +15,7 @@ Think of pointers as being a VARIABLE that points to another location in memory
 
 	printf("%p\n", n); // This will show the address of n
 
-					// ------------- Strings ------------- //
+// ------------- Strings ------------- //
 
 Assume I have saved a string s = "HI!":
 	string s = "HI!"; // Remember: "string" IS NOT a data type in C (is just something from CS50 course)
@@ -58,7 +58,7 @@ IF MALLOC IS CALLED TOO MANY TIMES AND THEN MEMORY IS NOT FREED -----> A HEAP OV
 
 Use from library - strcpy(destination, source); // to copy two strings
 
-			// ------------- Passing variables by reference ------------- //
+// ------------- Passing variables by reference ------------- //
 Example:
 	void swap(int *a, int *b) // What this is saying is that a (and b) won't be an INT, but the addresses of those INTs
 	{
@@ -70,7 +70,7 @@ This would return the actual values of a and b swapped to the main function, bec
 This solves the problem with the context of the functions.
 IF A STACK TOO BIG IS CALLED (i.e. lots of recursion cases) THEN -----> A STACK OVERFLOW MIGHT OCCUR
 
-			// ------------- Reading, Writing, Creating and Closing files ------------- //
+// ------------- Reading, Writing, Creating and Closing files ------------- //
 
 FILE is a type defined in the standard I/O library (stdio.h) that represents a file stream.
 It is used to handle file operations such as reading, writing, and closing files.
