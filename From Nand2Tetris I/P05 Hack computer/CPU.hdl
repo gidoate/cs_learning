@@ -36,11 +36,13 @@ CHIP CPU {
     // Decode of opcode: addition of bit-15 of instruction with itself
     // If carry is 0, then it's a A-Instruction
     // If carry is 1, then it's a C-Instruction
+
     Mux16(a=instruction , b=outALU , sel=instruction[15] , out=inA );
     Not(in=instruction[15],out=notinstruction);
     Or(a=notinstruction,b=instruction[5],out=loadA);//d1
     ARegister(in=inA,load=loadA,out=Aout,out[0..14]=addressM);
     Mux16(a=Aout , b=inM , sel=instruction[12] , out=AMout );
+
     // ALU
     And(a=instruction[11],b=instruction[15],out=zx);//c1
     And(a=instruction[10],b=instruction[15],out=nx);//c2

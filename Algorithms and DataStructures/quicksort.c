@@ -1,5 +1,5 @@
 #include <stdio.h>
-int swap(int* a, int* b)
+int swap(int* a, int* b) // Input by reference (this way the changes are reflected down in the stack)
 {
     int temp = *a;
     *a = *b;
