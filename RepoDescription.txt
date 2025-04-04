@@ -8,7 +8,7 @@ Course 1 (completed - 100%) - The elements of computing systems I (From Nand 2 T
       1. Project 1 - Building Logic gates 
       2. Project 2 - Building ALU 
       3. Project 3 - Builiding Computer memory chips (RAM and ROM)
-      4. Project 4 - Hack Computer assembly language (2x instruction assembly language)
+      4. Project 4 - Hack Computer assembly language (2x instruction (A, C) + 3x registers (A, D, M) assembly language)
       5. Project 5 - Implementing the Von-Neuman Architecture
       6. Project 6 - Building the assembler (hand-written version and coding version)
 

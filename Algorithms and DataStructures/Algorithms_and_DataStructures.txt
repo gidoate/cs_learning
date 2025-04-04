@@ -69,7 +69,15 @@ Linked list disadvantage
        follow the list through each element until finding the one you're looking for
     2. Allow only for SEQUENTIAL access
 
-
+Linked list implementation exercise comments:
+// This is my version of a linked list for learning purposes.
+// As a more advanced version, the linked list code shall have:
+// 1. Structure definition
+// 2. Create node function
+// 3. Insert node function
+// 4. Delete node function
+// 5. Traverse list function
+// 6. Main function
 
 ** -- Combinations of both type of data structures are possible and might be a good solution in certain cases
 where reading and adding data is requied  -- **
