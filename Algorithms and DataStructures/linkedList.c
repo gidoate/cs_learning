@@ -37,7 +37,7 @@ int main(void)
     for (int i = 0; i < 3; i++)
     {
         printf("Item Name: %s, Age: %i, Next Item: %p\n", items[i].item_name, items[i].age, (void*)items[i].next_item);
-        printf("Current item address: %p\n", &items[i]);
+        printf("%s address: %p\n", items[i].item_name, &items[i]);
     }
 
     return 0;
