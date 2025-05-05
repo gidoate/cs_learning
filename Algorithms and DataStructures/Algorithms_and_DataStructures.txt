@@ -121,7 +121,7 @@ It's based in three functions: quicksort (recursive), partition (arrangement of 
         This is done using the ADDRESS-OF operator (&)
 
 // ---------- Hash tables ---------- //
-
+Combination of an array and a linked list
 This is a quick way to find an item in a list.
 Based on:
 	1. Hash function
@@ -139,3 +139,47 @@ Collision - when two keys are assigned to the same slot in the array
 	This has an impact on performance, provided that serching in an array is O(1), but in a linked list is O(n), so a good hash
 	function is very important.
 Review Load Factor (shall always be <0.7) and Hash Function creation (SHA Function)
+
+// ---------- Trees ---------- //
+
+Two dimensional structures
+Binary search tree - structure example:
+
+	typedef struct node
+	{
+	    int number;
+	    struct node *left;
+	    struct node *right;
+	} node;
+
+This would give a Big O of (log n) instead of havig BigO(n) of a linked list
+The downside of this structure is the larger use of memory.
+
+Recursive example for binary search in a binary search tree:
+
+bool search(node *tree, int number)
+{
+    if(tree == NULL)
+    {
+        return false;
+    }
+    else if (number < tree->number)
+    {
+        return search (tree -> left, number);
+    }
+    else if (number > tree->number)
+    {
+        return search (tree -> right, number);
+    }
+    else
+    {
+        return true;
+    }
+}
+
+// ---------- Dictionaries ---------- //
+Implementation of a KEY (normally strings) and a VALUE (different types of data and info) linked to it
+
+Key | Value
+
+
