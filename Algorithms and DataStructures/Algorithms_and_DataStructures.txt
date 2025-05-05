@@ -182,4 +182,6 @@ Implementation of a KEY (normally strings) and a VALUE (different types of data 
 
 Key | Value
 
-
+// ---------- Tries ---------- //
+Tree of arrays
+Aim is to provide constant time
