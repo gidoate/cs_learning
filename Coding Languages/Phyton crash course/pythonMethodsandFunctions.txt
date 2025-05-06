@@ -1,0 +1,21 @@
+PYTHON METHODS and FUNCTIONS
+
+FUNCTIONS
+    Working with lists
+    len()      ->  ouputs the lenght of the list
+
+METHODS
+    Modifying a string
+    .title()    -> this method capitalizes the first letter of each word of a string
+    .upper()    -> upper cases all letters
+    .lower()    -> lower cases all letters
+
+    Modifying the elements of a list
+    .append()   -> to add elements to a list in the next to last position
+    .pop()      -> to remove the LAST element of a list
+    .pop(#)     -> to remove the specific index of the list
+    .remove()   -> to remove a specific item of the list
+    .sort()     -> sorts out a list in alphabetical order
+    .sorted()   -> sorts the list temporarily
+    .reverse()  -> prints the original list in the reverse order
+    
