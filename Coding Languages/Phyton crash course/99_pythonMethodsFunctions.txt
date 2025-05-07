@@ -3,6 +3,8 @@ PYTHON METHODS and FUNCTIONS
 FUNCTIONS
     Working with lists
     len()      ->  ouputs the lenght of the list
+    range(x,y) ->  generates a series of numbers ranging from x to y-1
+    value **2  ->  squares the value (same as ^2) 
 
 METHODS
     Modifying a string
