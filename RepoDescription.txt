@@ -14,7 +14,7 @@ Course 1 (completed - 100%) - The elements of computing systems I (From Nand 2 T
 
 Course 2 (ongoing - 90%) - CS50x 2025 - Harvard University
   Main topics:
-      1. Programming basics (C, Python, SQL) - hello world!, arrays, debugging, recursion, structures, pointers, file I/O 
+      1. Programming basics in C - hello world!, arrays, debugging, recursion, structures, pointers, file I/O 
       2. Computing science foundamentals - machine language, assembly language, memory hierarchy (heap, stack, buffer overflow...)
       3. Algorithms - Big O notation, linear search, binary search, sorting algorithms
       4. SQL - MISSING Lecture to be completed
@@ -25,9 +25,13 @@ Course 3 (ongoing - 60%) - Algorithms and Data structures - based on book "Grokk
       0. Programming fundamentals: recursion
       1. Algorithms: Big O notiation, Linear search, Binary search, Selection sort, Quick sort
       2. Data structures: Arrays, Linked lists, Hash tables
-      …
+      ...
 
-Course 4 (ongoing - 10%) - Python crash course
+Course 4 (ongoing - 10%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
+  Main topics:
+      1. Lists, Working with lists, User input 
+      2. While and For loops
+      3. If Statements
 
 
 Course 99 (ongoing) - General learning of C Syntax

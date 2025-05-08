@@ -5,6 +5,8 @@ FUNCTIONS
     len()      ->  ouputs the lenght of the list
     range(x,y) ->  generates a series of numbers ranging from x to y-1
     value **2  ->  squares the value (same as ^2) 
+    input()    ->  to get user input
+    int()      ->  to transform an input string into an integer type
 
 METHODS
     Modifying a string
@@ -20,4 +22,5 @@ METHODS
     .sort()     -> sorts out a list in alphabetical order
     .sorted()   -> sorts the list temporarily
     .reverse()  -> prints the original list in the reverse order
+    .index()    -> to use the index number from a list
     
