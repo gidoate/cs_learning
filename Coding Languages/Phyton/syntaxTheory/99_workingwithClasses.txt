@@ -1,0 +1,10 @@
+In object oriented programming, there are items called CLASSES
+A function within a class is named a METHOD
+
+Methods
+
+__init(self, attribute#1, attribute#2)__
+
+In the case of the class Dog(), there are another two methods:
+    1. sit()
+    2. roll()

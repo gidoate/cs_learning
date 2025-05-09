@@ -7,6 +7,7 @@ FUNCTIONS
     value **2  ->  squares the value (same as ^2) 
     input()    ->  to get user input
     int()      ->  to transform an input string into an integer type
+    str()      ->  to make a certain variable data type a string
 
 METHODS
     Modifying a string
@@ -23,4 +24,4 @@ METHODS
     .sorted()   -> sorts the list temporarily
     .reverse()  -> prints the original list in the reverse order
     .index()    -> to use the index number from a list
-    
+
