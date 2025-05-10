@@ -17,7 +17,7 @@ Course 2 (ongoing - 90%) - CS50x 2025 - Harvard University
       1. Programming basics in C - hello world!, arrays, debugging, recursion, structures, pointers, file I/O 
       2. Computing science foundamentals - machine language, assembly language, memory hierarchy (heap, stack, buffer overflow...)
       3. Algorithms - Big O notation, linear search, binary search, sorting algorithms
-      4. SQL - MISSING Lecture to be completed
+      4. SQL - Lecture to be completed
       ...
 
 Course 3 (ongoing - 60%) - Algorithms and Data structures - based on book "Grokking Algorithms" (Aditya Y. Bhargava)
@@ -27,11 +27,17 @@ Course 3 (ongoing - 60%) - Algorithms and Data structures - based on book "Grokk
       2. Data structures: Arrays, Linked lists, Hash tables
       ...
 
-Course 4 (ongoing - 10%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
-  Main topics:
-      1. Lists, Working with lists, User input 
-      2. While and For loops
-      3. If Statements
+Course 4 (not started) - The elements of computing systems II (From Nand 2 Tetris II) - The Hebrew University of Jerusalem
+  This course requires some previous knowledge of high-level programming languages (Java, Python...).
+  Because of this, I decided to jump into Course 5 (Python Language) and come back to this course later on
 
+Course 5 (ongoing - 50%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
+  Main topics:
+      1. Lists, Working with lists, User input, File handling
+      2. While and For loops
+      3. If Statements, Functions
+      4. Object oriented coding - classes
+  Projects:
+      1. Project 1 - Alien invasion (ongoing)
 
 Course 99 (ongoing) - General learning of C Syntax
