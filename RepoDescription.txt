@@ -36,7 +36,7 @@ Course 5 (ongoing - 50%) - Python Language - based on book "Python crash course"
       1. Lists, Working with lists, User input, File handling
       2. While and For loops
       3. If Statements, Functions
-      4. Object oriented coding - classes
+      4. Object oriented programming - classes
   Projects:
       1. Project 1 - Alien invasion (ongoing)
 
