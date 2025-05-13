@@ -1,13 +1,13 @@
-import sys # Used to exit the game when the player quits
 import pygame
 
 from settings import Settings
 from ship import Ship
+import game_functions as gf
 
 def run_game():
     # Initiliaze the game and create the screen object.
     pygame.init()
-    ai_settings =  Settings()
+    ai_settings =  Settings() # Screen settings initialization
     screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height)) # Tuple to define the dimensions of the screen
     pygame.display.set_caption("Alien Invasion")
 
@@ -16,17 +16,7 @@ def run_game():
 
     # Start the main loop for the game.
     while True:
-        # Watch for keyboard and mouse events.
-        # This allows the game to respond to the inputs of the user
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
-
-        # Redraw the screen every pass through the loop
-        screen.fill(ai_settings.bg_colour)
-        ship.blitme()
-        
-        # Make the most recently drawn screen visible
-        pygame.display.flip()
+        gf.check_events()
+        gf.update_screen(ai_settings, screen, ship)      
 
 run_game() # To start the game

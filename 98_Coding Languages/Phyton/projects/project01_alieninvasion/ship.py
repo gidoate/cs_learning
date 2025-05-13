@@ -6,14 +6,15 @@ class Ship():
         self.screen = screen
 
         # Load the ship image and get its rect.
-        self.image = pygame.image.load('C:\EmbeddedDevelopment\cs_learning\Coding Languages\Phyton\projects\project01_alieninvasion\icons\ship.bmp')
+        self.image = pygame.image.load('C:\\EmbeddedDevelopment\\cs_learning\\98_Coding Languages\\Phyton\\projects\\project01_alieninvasion\\icons\\ship.bmp')
         self.rect = self.image.get_rect() # This is used to access the surface (screen) rect attribute
-        # pygame allows you to 
+
         self.screen_rect = screen.get_rect()
         
         # Start each new ship at the bottom center of the screen.
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
+
     def blitme(self):
         """Draw the ship at its current location."""
         self.screen.blit(self.image, self.rect)
