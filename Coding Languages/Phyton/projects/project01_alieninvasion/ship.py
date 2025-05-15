@@ -7,7 +7,7 @@ class Ship():
         self.ai_settings = ai_settings
 
         # Load the ship image and get its rect.
-        self.image = pygame.image.load('C:\\EmbeddedDevelopment\\cs_learning\\98_Coding Languages\\Phyton\\projects\\project01_alieninvasion\\icons\\ship.bmp')
+        self.image = pygame.image.load('C:\\EmbeddedDevelopment\\cs_learning\\Coding Languages\\Phyton\\projects\\project01_alieninvasion\\icons\\ship.bmp')
         self.rect = self.image.get_rect() # This is used to access the surface (screen) rect attribute
 
         self.screen_rect = screen.get_rect()
