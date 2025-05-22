@@ -1,0 +1,17 @@
+    <title>{{ topic }}</title>
+    <h1>{{ topic }}</h1>
+    <p>Date added: {{ topic.date_added }}</p>
+
+    <h2>Entries</h2>
+    <ul>
+        {% for entry in entries %}
+            <li>
+                <p>{{ entry.date_added|date:"Y-m-d H:i" }}</p>
+                <p>{{ entry.text }}</p>
+            </li>
+        {% empty %}
+            <li>No entries have been added yet.</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="{% url 'learning_logs:topics' %}">Back to Topics</a></p>
