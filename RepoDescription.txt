@@ -1,5 +1,6 @@
 This repository contains material I am developing while I teach myself computer science and embedded systems development.
 Training courses on: computer HW, Algorithms, C-Coding, Data structures.... 
+I am also learning about CI/CD and DevOps - see my progress in the following repo: https://github.com/gidoate/devops_training
 
 Course completion:
 
