@@ -3,6 +3,9 @@
     <p>Date added: {{ topic.date_added }}</p>
 
     <h2>Entries</h2>
+    <p>
+        <a href="{% url 'learning_logs:new_entry' topic.id %}">add new entry</a>
+    </p>
     <ul>
         {% for entry in entries %}
             <li>
