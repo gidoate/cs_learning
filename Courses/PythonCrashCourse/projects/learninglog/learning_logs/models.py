@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here. A model is just a CLASS! 
 class Topic(models.Model):
     """A topic the user is learning about"""
-    title = models.CharField(max_length=100, default='Default Title')
+    title = models.CharField(max_length=100)
     text = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now_add=True)
     def __str__(self):
