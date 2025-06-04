@@ -4,10 +4,18 @@
     <h2>Topics</h2>
     <ul>
         {% for topic in topics %}
-            <li><a href="{% url 'learning_logs:topic' topic.id %}">{{ topic.title }}</a></li>
+            <li>
+                <!-- Link to view topic details -->
+                <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic.title }}</a>
+
+                <!-- Link to confirmation page instead of direct deletion -->
+                <a href="{% url 'learning_logs:confirm_delete_topic' topic.id %}" style="color:red;">Delete</a>
+            </li>
         {% empty %}
             <li>No topics found.</li>
         {% endfor %}
     </ul>
+
+    <!-- Button to add a new topic -->
     <a href="{% url 'learning_logs:new_topic' %}">Add a new topic</a>
 {% endblock %}

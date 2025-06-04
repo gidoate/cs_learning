@@ -32,7 +32,7 @@ Course 4 (not started) - The elements of computing systems II (From Nand 2 Tetri
   This course requires some previous knowledge of high-level programming languages (Java, Python...).
   Because of this, I decided to jump into Course 5 (Python Language) and come back to this course later on
 
-Course 5 (ongoing - 50%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
+Course 5 (ongoing - 100%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
   Main topics:
       1. Lists, User input, File handling
       2. While and For loops
@@ -40,5 +40,6 @@ Course 5 (ongoing - 50%) - Python Language - based on book "Python crash course"
       4. Object oriented programming - classes
   Projects:
       1. Project 1 - Alien invasion (ongoing)
+      2. Project 2 - Learning log webpage (completed)
 
 Course 99 (ongoing) - General learning of C Language
