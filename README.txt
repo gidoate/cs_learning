@@ -4,7 +4,7 @@ I am also learning about CI/CD and DevOps - see my progress in the following rep
 
 Course completion:
 
-Course 1 (completed - 100%) - The elements of computing systems I (From Nand 2 Tetris I) - The Hebrew Universtity of Jerusalem
+CS01 (completed - 100%) - The elements of computing systems I (From Nand2Tetris I) - The Hebrew Universtity of Jerusalem
   Projects:
       1. Project 1 - Building Logic gates 
       2. Project 2 - Building ALU 
@@ -13,7 +13,7 @@ Course 1 (completed - 100%) - The elements of computing systems I (From Nand 2 T
       5. Project 5 - Implementing the Von-Neuman Architecture
       6. Project 6 - Building the assembler (hand-written version and coding version)
 
-Course 2 (ongoing - 90%) - CS50x 2025 - Harvard University
+CS02 (ongoing - 90%) - CS50x 2025 - Harvard University
   Main topics:
       1. Programming basics in C - hello world!, arrays, debugging, recursion, structures, pointers, file I/O 
       2. Computing science foundamentals - machine language, assembly language, memory hierarchy (heap, stack, buffer overflow...)
@@ -21,18 +21,18 @@ Course 2 (ongoing - 90%) - CS50x 2025 - Harvard University
       4. SQL - Lecture to be completed
       ...
 
-Course 3 (ongoing - 60%) - Algorithms and Data structures - based on book "Grokking Algorithms" (Aditya Y. Bhargava)
+CS03 (ongoing - 60%) - Algorithms and Data structures - based on book "Grokking Algorithms" (Aditya Y. Bhargava)
   Main topics:
       0. Programming fundamentals: recursion
       1. Algorithms: Big O notiation, Linear search, Binary search, Selection sort, Quick sort
       2. Data structures: Arrays, Linked lists, Hash tables
       ...
 
-Course 4 (not started) - The elements of computing systems II (From Nand 2 Tetris II) - The Hebrew University of Jerusalem
+CS04 (not started) - The elements of computing systems II (From Nand2Tetris II) - The Hebrew University of Jerusalem
   This course requires some previous knowledge of high-level programming languages (Java, Python...).
   Because of this, I decided to jump into Course 5 (Python Language) and come back to this course later on
 
-Course 5 (ongoing - 100%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
+CS05 (ongoing - 100%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
   Main topics:
       1. Lists, User input, File handling
       2. While and For loops
@@ -41,5 +41,10 @@ Course 5 (ongoing - 100%) - Python Language - based on book "Python crash course
   Projects:
       1. Project 1 - Alien invasion (ongoing)
       2. Project 2 - Learning log webpage (completed)
+         Project consisting of building a webpage for a learning log using DJANGO framework and django-bootstrap5
+         Contents:
+          - Models (databases), views, urls, views
+          - Topics, Entries, ADD-DELETE buttons
+          - User register, Log in, Content ownership
 
-Course 99 (ongoing) - General learning of C Language
+CS99 (ongoing) - General learning of C Language
