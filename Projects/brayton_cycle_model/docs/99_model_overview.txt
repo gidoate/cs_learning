@@ -1,0 +1,15 @@
+STAGE 1 (completed)
+Reference - Moran and Shapiro - Fundamentals of Engineering Thermodynamics (eight edition), 2014
+Assumptions of the model at stage 1:
+
+1. No losses - compression and expansion are 100% efficient (isentropic)
+2. Perfect gas behaviour (constant cp, cv)
+3. No pressure drops in the combustion chamber
+4. No mechanical losses in bearing or blades
+5. The temperature rise that would be brouht about by combustion is accomplished by a heat transfer from an external source
+   Avoids complexity of combustion process and the change in composition during combustion
+
+STAGE 2 (completed)
+Implementation of real gas properties (non-constan cp, cv)
+Cp and Cv Data source: https://www.cambridge.org/us/files/9513/6697/5546/Appendix_E.pdf
+This stage was validated with example 9.4 of Moran&Shapiro 2014

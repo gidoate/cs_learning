@@ -1,0 +1,29 @@
+# Work developed by the compressor per unit of mass flowing (1 -> 2)
+W_dot_c / m_dot = h_2 - h_1
+Wc = cp * (T2 - T1)  # No need for /1000 unless cp is in kJ/kg·K
+
+# Heat added to the cycle per unit of mass flowing (2 -> 3)
+Q_dot_in / m_dot = h3 - h2
+
+# Work developed by the turbine per unit of mass flowing (3 -> 4)
+W_dot_t / m_dot = h_3 - h_4
+
+# Heat rejected per unit of mass flowing (4 -> 1)
+Q_dot_out / m_dot = h_4 - h_1
+
+# Efficiency calculation
+efficency = [(W_dot_t / m_dot) - (W_dot_c / m_dot)] / Q_dot_in = [(h_3 - h_4) - (h_2 - h_1)] / (h_3 - h_2)
+
+# Back work ratio 
+bwr = (W_dot_c / m_dot) / (W_dot_t / m_dot) = (h_2 - h_1) / (h_3 - h_4)
+
+# Pressure relations
+pr_2 = pr_1 * (p_2/p_1)
+pr_4 = pr_3 * (p_1/p_2)
+
+# Temperature relations
+T_2 = T_1 (p_2 / p_1)**(gamma-1)/gamma
+T_4 = T_3 (p_1 / p_2)**(gamma-1)/gamma
+
+# Mass - Volume relation
+m_dot = [(volumetric_flow_rate * P1)] / [(8314 / 28.97) * T1]
