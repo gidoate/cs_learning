@@ -1,0 +1,17 @@
+STAGE 1 (completed)
+Reference - Moran and Shapiro - Fundamentals of Engineering Thermodynamics (eight edition), 2014 / Saravanamuttoo - Gas Turbine theory (fifth edition), 2001
+Assumptions of the model at stage 1:
+
+1. Compression and expansion processes are reversible and adiabatic (i.e. isentropic)
+2. The change of kinetic energy of the working frluid between the inlet and the outlet of each component is negligible
+3. No pressure losses in the inlet ducting, combustion chamber, heat exchangers, intercoolers, exhaust ducting and any other ducting
+2. Perfect gas behaviour (constant cp, cv)
+3. Mass flow of gas is constant along the cycle
+4. Heat transfer in the heat-exchangers is complete - no difference between the open and closed cycles
+5. The temperature rise that would be brouht about by combustion is accomplished by a heat transfer from an external source
+   Avoids complexity of combustion process and the change in composition during combustion
+
+STAGE 2 (completed)
+Implementation of real gas properties (non-constan cp, cv)
+Cp and Cv Data source: https://www.cambridge.org/us/files/9513/6697/5546/Appendix_E.pdf
+This stage was validated with example 9.4 of Moran&Shapiro 2014

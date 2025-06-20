@@ -2,6 +2,11 @@ This repository contains material I am developing while I teach myself computer 
 Training courses on: computer HW, Algorithms, C-Coding, Data structures.... 
 I am also learning about CI/CD and DevOps - see my progress in the following repo: https://github.com/gidoate/devops_training
 
+Projects:
+
+Project 1 | Brayton Cycle model    | Programming Language: python | Status: completed (validated)
+Project 2 | Turbo Jet Engine model | Programming Language: python | Status: ongoing (architecture revision)
+
 Course completion:
 
 CS01 (completed - 100%) - The elements of computing systems I (From Nand2Tetris I) - The Hebrew Universtity of Jerusalem
