@@ -1,4 +1,4 @@
-def irreversibilities_brayton_cycle(Wc_s, Wt_s, h_1_s, h_3_s, isentropic_compressor_eff, isentropic_turbine_eff):
+def irreversibilities_brayton_cycle(Wc_s, Wt_s, h_1, h_3, isentropic_compressor_eff, isentropic_turbine_eff):
     """
     Calculates the actual work and heat values in a Brayton cycle by accounting for isentropic 
     inefficiencies in the compressor and turbine.
@@ -6,8 +6,8 @@ def irreversibilities_brayton_cycle(Wc_s, Wt_s, h_1_s, h_3_s, isentropic_compres
     Args:
         Wc_s (float): Isentropic work input to the compressor [kJ/kg].
         Wt_s (float): Isentropic work output from the turbine [kJ/kg].
-        h_1_s (float): Enthalpy at the compressor inlet [kJ/kg].
-        h_3_s (float): Enthalpy at the turbine inlet [kJ/kg].
+        h_1 (float): Enthalpy at the compressor inlet [kJ/kg].
+        h_3 (float): Enthalpy at the turbine inlet [kJ/kg].
         isentropic_compressor_eff (float): Isentropic efficiency of the compressor (0 < eff ≤ 1).
         isentropic_turbine_eff (float): Isentropic efficiency of the turbine (0 < eff ≤ 1).
 
@@ -25,8 +25,8 @@ def irreversibilities_brayton_cycle(Wc_s, Wt_s, h_1_s, h_3_s, isentropic_compres
     Wt = Wt_s * isentropic_turbine_eff
 
     # Actual heat addition
-    h_2 = h_1_s + Wc
-    Qin = h_3_s - h_2
+    h_2 = h_1 + Wc
+    Qin = h_3 - h_2
 
     # Actual heat rejection (TBD)
     Qout = Qin - (Wt - Wc)

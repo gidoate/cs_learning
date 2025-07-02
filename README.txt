@@ -4,8 +4,8 @@ I am also learning about CI/CD and DevOps - see my progress in the following rep
 
 Projects:
 
-Project 1 | Brayton Cycle model    | Programming Language: python | Status: completed (validated)
-Project 2 | Turbo Jet Engine model | Programming Language: python | Status: ongoing (architecture revision)
+Project 1 | Brayton Cycle model    | Programming Language: Python | Status: completed (validated)
+Project 2 | Turbo Jet Engine model | Programming Language: Python | Status: ongoing (long-term project) | Next steps: nozzle modeling, integration with brayton cycle
 
 Course completion:
 
