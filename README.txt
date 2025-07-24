@@ -35,7 +35,7 @@ CS03 (ongoing - 60%) - Algorithms and Data structures - based on book "Grokking 
 
 CS04 (not started) - The elements of computing systems II (From Nand2Tetris II) - The Hebrew University of Jerusalem
   This course requires some previous knowledge of high-level programming languages (Java, Python...).
-  Because of this, I decided to jump into Course 5 (Python Language) and come back to this course later on
+  I am not taking the projects of this course, just focusing on the theoretical part to have better understanding of how an operating system and high level programming languages work
 
 CS05 (ongoing - 100%) - Python Language - based on book "Python crash course" (Eric Matthes, 2016)
   Main topics:
@@ -51,5 +51,7 @@ CS05 (ongoing - 100%) - Python Language - based on book "Python crash course" (E
           - Models (databases), views, urls, views
           - Topics, Entries, ADD-DELETE buttons
           - User register, Log in, Content ownership
+
+CS06 (ongoing 30%) - Introduction to computer networking 
 
 CS99 (ongoing) - General learning of C Language

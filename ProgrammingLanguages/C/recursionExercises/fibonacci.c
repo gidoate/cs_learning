@@ -14,9 +14,9 @@ int fibonacci(int n)
 
 int main(void)
 {
-    int n = 0;
-    printf("Input number of terms for the Series (< 20) : ");
-    scanf("%d", &n);
+    int n = 4;
+    // printf("Input number of terms for the Series (< 20) : ");
+    // scanf("%d", &n);
     for (int i = 1; i <= n; i++)
     {
         int result = fibonacci(i);
