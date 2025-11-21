@@ -1,0 +1,52 @@
+when looking into our stm32-based project, I see the following way to implement cmsis:
+
+use NXP HAL layer (already available)
+use FreeRtos (already available)
+add cmsis files (e.g. get the from stm32-based project, available via STM)
+used files will be cmsis_os.c, cmsis_os.h, core_cmFunc.h, cmsis_gcc.h
+adapt cmsis_gcc.h to NXP processor (only a few assembly functions)
+I do not see a copyright problem with this solution. The copyright is always mentioned in the source files.
+
+
+As I understand, we need the following packs:
+
+cmsis
+cmsis-freertos (FreeRtos that is supporting cmsis)
+cmsis pack (this is probably some kind of porting layer HW ó cmsis, but I do not know exactly)
+For further specific questions for porting CMSIS/ FreeRtos to our processor, please contact NXP or ARM KEIL.
+
+please use:
+
+- FreeRtos V10.5.1
+
+- cmsis API V1.02 or V1.03 (only document changes)
+
+How to use cmsis:
+
+https://arm-software.github.io/CMSIS_5/RTOS/html/usingOS.html
+
+get cmsis:
+
+https://www.keil.arm.com/packs/cmsis-arm/versions/
+
+version 4.1.0 (using API 1.02)
+
+get cmsis-freertos:
+
+https://github.com/ARM-software/CMSIS-FreeRTOS/releases
+
+version 10.5.1
+
+get ARM cmsis pack:
+
+https://www.keil.arm.com/packs/
+
+ask keil for cmsis pack for S32K146
+
+or maybe this helps:
+
+https://www.keil.arm.com/packs/s32_sdk_dfp-keil/versions/
+
+NXP processor:
+
+https://www.keil.arm.com/devices/nxp-s32k146haxxxlhx/features/
