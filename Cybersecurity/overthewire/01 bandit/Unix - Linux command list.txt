@@ -1,0 +1,87 @@
+Key Learnings:
+Basic Navigation and File Operations:
+
+Understanding the file system hierarchy.
+Navigating directories.
+Viewing and manipulating files.
+File Permissions:
+
+Understanding and modifying file permissions.
+Using chmod, chown, and chgrp.
+
+Text Processing:
+Viewing and searching through text files.
+Using text processing tools like grep, sort, uniq, strings, base64, xxd, etc.
+Data Encoding and Decoding:
+
+Encoding and decoding data in various formats (base64, hex, etc.).
+Networking:
+
+Basic networking commands and concepts.
+Using tools like nc (netcat) and telnet.
+Scripting and Automation:
+
+Writing simple shell scripts.
+Using loops and conditionals in scripts.
+Process Management:
+
+Understanding and managing processes.
+Using commands like ps, top, kill, etc.
+
+Main Commands:
+Navigation and File Operations:
+ls: List directory contents.
+cd: Change directory.
+pwd: Print working directory.
+cat: Concatenate and display file content.
+more, less: View file content with pagination.
+head, tail: Display the beginning or end of a file.
+cp: Copy files or directories.
+mv: Move or rename files or directories.
+rm: Remove files or directories.
+mkdir: Create directories.
+rmdir: Remove empty directories.
+find: Search for files in a directory hierarchy.
+
+File Permissions:
+chmod: Change file modes or Access Control Lists.
+chown: Change file owner and group.
+chgrp: Change group ownership.
+
+Text Processing:
+grep: Search text using patterns.
+sort: Sort lines of text files.
+uniq: Report or omit repeated lines.
+strings: Find printable strings in files.
+base64: Encode/decode data in base64.
+xxd: Make a hexdump or do the reverse.
+
+Data Encoding and Decoding:
+base64: Encode/decode data in base64.
+xxd: Make a hexdump or do the reverse.
+
+Networking:
+nc (netcat): Read and write data across network connections.
+telnet: User interface to the TELNET protocol.
+ssh: OpenSSH SSH client (remote login program).
+
+Scripting and Automation:
+sh, bash: Shell interpreters.
+echo: Display a line of text.
+for, while, if: Looping and conditional constructs in shell scripts.
+
+Process Management:
+ps: Report a snapshot of current processes.
+top: Display Linux tasks.
+kill: Send a signal to a process.
+bg, fg: Resume jobs in the background or foreground.
+jobs: List active jobs.
+
+Example Commands:
+ls -l: List files in long format, showing permissions.
+cd /path/to/directory: Change to a specified directory.
+cat filename: Display the content of a file.
+grep 'pattern' filename: Search for a pattern in a file.
+chmod 755 filename: Change file permissions to rwxr-xr-x.
+base64 -d encodedfile: Decode a base64 encoded file.
+nc -l -p 12345: Start a netcat listener on port 12345.
